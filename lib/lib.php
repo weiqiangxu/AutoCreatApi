@@ -306,7 +306,7 @@ class pregMatch{
 					if(!self::isEmptyDir($pathdir.'/'.$a))//是否为空
 					{
 						//如果不是，调用自身，不过是原来的路径+他下级的目录名
-						deltree($pathdir.'/'.$a);
+						self::deltree($pathdir.'/'.$a);
 					}
 					if(self::isEmptyDir($pathdir.'/'.$a))
 					{
